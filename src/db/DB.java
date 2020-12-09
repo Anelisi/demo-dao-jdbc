@@ -35,7 +35,8 @@ public class DB {
 
 
     private static Properties loadProperties () {
-        try (FileInputStream fs = new FileInputStream("db.properties")) {
+        try (FileInputStream fs = new FileInputStream("C:\\Users\\SouthSystem\\WorkSpace\\demo-dao-jdbc\\src" +
+                "\\resources\\db.properties")) {
             Properties props = new Properties();
             props.load(fs);
 
